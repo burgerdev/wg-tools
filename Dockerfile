@@ -4,7 +4,7 @@ FROM debian:latest AS build
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -qq build-essential libmnl-dev git
 
-RUN git clone https://git.zx2c4.com/WireGuard.git --depth=1 -b 0.0.20190913 /wireguard
+RUN git clone https://git.zx2c4.com/WireGuard.git --depth=1 -b 0.0.20190702 /wireguard
 
 WORKDIR /wireguard/src
 
